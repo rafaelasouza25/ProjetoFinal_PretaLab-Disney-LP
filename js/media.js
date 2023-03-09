@@ -24,13 +24,13 @@ function calcularMedia() {
 
   if(resultado === 0){
     mensagem =  ("Infelizmente você zerou a prova");
-  } else if (resultado > 0.1 && resultado < 3){
+  } else if (resultado >= 0.1 && resultado <= 3){
     mensagem = (`Caramba, deu ruim, você obteve media ${resultado}! Estude mais e tente novamente!`);
-  }else if (resultado > 3.1 && resultado < 5.9){
+  }else if (resultado >= 3.1 && resultado <= 5.9){
     mensagem = (`Você obteve media ${resultado}! Falta pouco para a média.`);
-  }else if (resultado > 6 && resultado < 7){
+  }else if (resultado >= 6 && resultado <= 7){
     mensagem = (`Você está na média com ${resultado}`);
-  }else if (resultado > 7.1 && resultado < 9.9){
+  }else if (resultado >= 7.1 && resultado <= 9.9){
     mensagem = (`"Notão! Sua média é ${resultado}!`);
   }else if (resultado ===10){
     mensagem = (`Hoje é seu aniversário? Pq você ta de parabéns! 10 de média`);
