@@ -22,7 +22,9 @@ function calcularMedia() {
 
   resultado = ((note1 + note2 + note3 + note4)/4);
 
-  if(resultado === 0){
+  if(resuktado<0){
+    mensagem = ("Verifique os valores");
+  }else if(resultado === 0){
     mensagem =  ("Infelizmente você zerou a prova");
   } else if (resultado >= 0.1 && resultado <= 3){
     mensagem = (`Caramba, deu ruim, você obteve media ${resultado}! Estude mais e tente novamente!`);
